@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon1.png">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;700;900&family=Poppins:wght@300;500;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('bgimg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+      background-color: black;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 30px 50px;
+    }
+
+    /* Logo */
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 50px;
+      color: white;
+    }
+
+    /* Navbar */
+    nav {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+    }
+
+    nav a {
+      font-weight: 300;
+      font-size: 16px;
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      animation: fadeOut 0.5s ease-in-out;
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0.5;
+      }
+    }
+
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    section p {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      header {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      nav {
+        position: static;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      section h2 {
+        font-size: 32px;
+      }
+
+      section p {
+        font-size: 18px;
+      }
+
+      footer {
+        font-size: 14px;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section h2 {
+        font-size: 26px;
+      }
+
+      section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Prem</h1>
+
+    <nav>
+      <a href="" target="_self">Home</a>
+      <a href="#"target="_self">Projects and skills</a>
+      <a href="about.html" target="_self">About</a>
+      <a href="#" target="_self">Contact</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Prem Yadav</h2>
+        <p>Web Developer.|</p>
+      </section>
+    </main>
+  </header>
+  <footer>
+    all rights reserved &copy; 2023
+  </footer>
+
+</body>
+
+</html>

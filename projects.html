@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="icon" type="image/png" href="favicon1.png">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;700;900&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('bgimg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      color: white;
+      background-color: black;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav a {
+      font-weight: 300;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffcc70;
+    }
+
+    main {
+      padding: 30px 40px;
+    }
+
+    section h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .project-card a {
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+    }
+
+    .project-card a:hover {
+      color: #ffd369;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      margin-top: 40px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      section h2 {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 14px;
+      }
+
+      .project-card a {
+        font-size: 16px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Prem</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects & Skills</a>
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Here are some of my Projects</h2>
+      <div class="projects">
+        <div class="project-card"><a href="https://nj10-prem.github.io/tic-tac-toee/" target="_blank">Project 1</a></div>
+        <div class="project-card"><a href="#">Project 2</a></div>
+        <div class="project-card"><a href="#">Project 3</a></div>
+        <div class="project-card"><a href="#">Project 4</a></div>
+        <div class="project-card"><a href="#">Project 5</a></div>
+        <div class="project-card"><a href="#">Project 6</a></div>
+        <div class="project-card"><a href="#">Project 7</a></div>
+        <div class="project-card"><a href="#">Project 8</a></div>
+        <div class="project-card"><a href="#">Project 9</a></div>
+        <div class="project-card"><a href="#">Project 10</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    All rights reserved &copy; 2023
+  </footer>
+
+</body>
+</html>
